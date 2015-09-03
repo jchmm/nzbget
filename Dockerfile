@@ -21,4 +21,4 @@ VOLUME ["/downloads"]
 
 WORKDIR /data/nzbget
 
-CMD ["nzbget","-s","-c","/config/nzbget.conf","--option","OutputMode=loggable"]
+CMD ["nzbget","-s","-c","/config/nzbget.conf","--option","OutputMode=loggable","--option","MainDir=/downloads"]
